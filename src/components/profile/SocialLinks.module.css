@@ -1,0 +1,38 @@
+.list {
+  display: flex;
+  gap: 28px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--ink);
+  transition:
+    color 250ms ease,
+    transform 350ms var(--ease-out);
+}
+
+.link:hover {
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.link svg {
+  width: 32px;
+  height: 32px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link {
+    transition: color 250ms ease;
+  }
+
+  .link:hover {
+    transform: none;
+  }
+}

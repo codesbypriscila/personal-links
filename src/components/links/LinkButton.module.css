@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 10px 22px -16px rgb(56 37 31 / 0.8);
+  transition:
+    background-color 250ms ease,
+    transform 350ms var(--ease-out);
+}
+
+.button:hover {
+  background: var(--ink-script);
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: background-color 250ms ease;
+  }
+
+  .button:hover {
+    transform: none;
+  }
+}

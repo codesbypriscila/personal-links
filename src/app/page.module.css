@@ -1,0 +1,19 @@
+.page {
+  display: flex;
+  justify-content: center;
+  min-height: 100dvh;
+  padding: 56px 0 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 480px;
+}
+
+@media (min-width: 560px) {
+  .page {
+    padding: 72px 20px;
+  }
+}
